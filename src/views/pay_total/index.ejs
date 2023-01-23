@@ -1,0 +1,13 @@
+<div class="article">
+  <%- include('../_error_panel.ejs') %>
+  <form action="/pay-total" data-test="pay-total-form" method="GET">
+    <div class="inputs">
+      <input type="number" name="coins" placeholder="Coins" data-test="coins" value="<%= coins %>"/>
+      <span class="operator" data-test=operator>✖️</span>
+      <input type="number" name="people" placeholder="People" data-test="people" value="<%= people %>" />
+    </div>
+    <div class="actions">
+      <input type="submit" class="btn" value="CALCULATE!" data-test="submit" />
+    </div>
+  </form>
+</div>

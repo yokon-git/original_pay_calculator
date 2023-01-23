@@ -1,0 +1,9 @@
+<div class="error-panel" data-test="error-panel">
+  <% if(locals.errors && locals.errors.length > 0) { %> 
+    <ul class="error">
+      <% for(const error of locals.errors) { %>
+        <li><%= error %></li>
+      <% } %>  
+    </ul>
+  <% } %>
+</div>
